@@ -1,0 +1,5 @@
+/* style.css */
+img {
+    max-width: 30%; /* A imagem não ultrapassará a largura do container pai */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+  }
