@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback para o perfil de Juliana de Oliveira</h1>
+    </header>
+
+ 
+    <form id="myForm">
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lEmail">E-mail:</label><br>
+        <input type="text" id="lEmail" name="lEmail"><p></p><br>
+
+        <label for="profile">Como você encontrou meu perfil?</label>
+        <select id="profile" name="profile">
+            <option value="google">Google</option>
+            <option value="social-media">Mídia social</option>
+            <option value="friend">Amigo</option>
+            <option value="other">Outros</option>
+        </select><p></p><br>
+
+        <label for="feedback">Comentário sobre o feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="3" cols="50"></textarea><br><br>
+
+        <label>Você gostou do meu perfil?</label><br>
+        <input type="radio" id="sim" name="like_profile" value="sim">
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="nao" name="like_profile" value="nao">
+        <label for="nao">Não</label><br>
+        <input type="radio" id="talvez" name="like_profile" value="talvez">
+        <label for="talvez">Talvez</label><br><br>
+
+        <label>O que você gostou no perfil?</label><br>
+        <input type="checkbox" id="design" name="like_aspect" value="design">
+        <label for="design">Design</label><br>
+        <input type="checkbox" id="conteudo" name="like_aspect" value="conteudo">
+        <label for="conteudo">Conteúdo</label><br>
+        <input type="checkbox" id="facilidade" name="like_aspect" value="facilidade">
+        <label for="facilidade">Facilidade de uso</label><br>
+        <input type="checkbox" id="outros" name="like_aspect" value="outros">
+        <label for="outros">Outros</label><br><br>
+
+
+        <input type="reset" value="Redefinir Feedback">
+        <input type="submit" value="Enviar Feedback">
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
