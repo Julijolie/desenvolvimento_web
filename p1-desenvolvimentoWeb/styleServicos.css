@@ -1,0 +1,188 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+}
+
+/* Configuração de estilo da barra de menu */
+.menu {
+    background: #de9f4e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo-home {
+    background-color: transparent;
+    border: none;
+}
+
+.icon-button i {
+    font-size: 40px;
+    color: #060E21;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre os itens do menu */
+}
+
+.menu-items li a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo do corpo e centralização dos serviços */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Cor de fundo */
+    margin-top: 50px; /* Espaço para o menu fixo */
+}
+
+/* Centralização do conteúdo principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 800px; /* Limita a largura do conteúdo */
+    width: 100%; /* Garante que a área de conteúdo tenha uma largura máxima */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Centralização dos serviços */
+.servicos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    width: 100%;
+    max-width: 800px; /* Limite de largura */
+    margin: 0 auto;
+}
+.servico {
+    margin-bottom: 40px;
+}
+
+.servico h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #f39c12;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center; /* Centraliza o texto no footer */
+}
+
+/* Tornando o layout responsivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}

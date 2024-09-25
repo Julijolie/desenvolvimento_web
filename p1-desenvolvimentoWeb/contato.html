@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styleContato.css">
+    <!-- Adicionando FontAwesome para o ícone de sol --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="menu">
+        <button id="logo-home" class="logo-home">
+            <i class="fa-solid fa-umbrella-beach"></i>
+        </button>
+        <nav>
+           <ul class="menu-items">
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+           </ul> 
+        </nav>
+    </header>
+        <!-- Formulário de Contato -->
+        <section class="form-container">
+            <h2>Nos envie uma mensagem:</h2>
+            <form id="contactForm" action="/enviar" method="POST">
+                <label for="fname">Nome:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+    
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br>
+    
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Sobre</h4>
+                    <p>Somos a principal escola de Stand Up Paddle de Copacabana, proporcionando aulas e aventuras no mar para todas as idades.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-copyright">© 2024 Escola de SUP - Todos os direitos reservados</p>
+        </footer>
+</body>
+</html>
