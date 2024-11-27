@@ -1,0 +1,87 @@
+/* Estilos Gerais - Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    background-color: #faadcf;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Links */
+a {
+    color: #392ccc;
+    font-style: italic;
+}
+
+/* Imagens */
+img {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "\2022"; /* Bullet point */
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Layout geral */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    flex: 1 0 auto; /* Garante que o main ocupe o espaço restante */
+}
+
+/* Footer */
+footer {
+    flex: 0 0 auto;
+    width: 100%; /* O footer ocupa 100% da largura */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px; /* Adiciona um espaço ao redor do conteúdo */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+    position: relative;
+    bottom: 0;
+}
+
+/* Header Responsivo */
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o conteúdo no header */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens de navegação */
+    flex-wrap: wrap; /* Permite que os itens fiquem responsivos em telas menores */
+}
